@@ -101,7 +101,22 @@ phase_2_solutions_and_evaluation = Task(
        - What was missing or should be simpler?
 
     Compile: Top 3 solutions, game usability feedback, concrete improvements.""",
-    expected_output='Top 3 solutions with stakeholder support, game usability evaluation, and concrete improvement suggestions.',
+    expected_output='''A detailed markdown report strictly following this format:
+
+*Top 3 solutions with stakeholder support:*
+1. [Solution Name] - supported by [Stakeholder Names]
+2. [Solution Name] - supported by [Stakeholder Names]
+3. [Solution Name] - supported by [Stakeholder Names]
+
+*Game usability evaluation:*
+1. [Insight 1]
+2. [Insight 2]
+3. [Insight 3]
+
+*Concrete improvement suggestions:*
+1. [Suggestion 1]
+2. [Suggestion 2]
+3. [Suggestion 3]''',
     agent=facilitator,
     context=[phase_1_mapping_and_walkthrough]
 )
